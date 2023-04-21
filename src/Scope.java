@@ -1,6 +1,15 @@
 public class Scope {
 
-    static int dummy(int a, String b){
+//    int c = dummy(10, "Basil", 'a', dd);
+    static int dummy(int a, String b, char x, float y){
+
+        return 1;
+    }
+
+    static int dummy(int a, String b, char x, double y){
+
+        System.out.println(y);
+
 
         int num1=10;
         int num2=20;
@@ -38,6 +47,11 @@ public class Scope {
 
 
     public static void main(String[] args) {
+        double dd = 100.100;
+
+
+        int c = dummy(10, "Basil", 'a', dd);
+
 
     }
 
